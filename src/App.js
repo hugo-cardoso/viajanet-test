@@ -1,11 +1,14 @@
 import React from 'react';
 
+import Container from '@globalStyles/Container';
 import GlobalStyle from '@globalStyles/global';
 
 const App = () => (
   <>
     <GlobalStyle />
-    <div>:)</div>
+    <Container>
+      <div>:)</div>
+    </Container>
   </>
 );
 
