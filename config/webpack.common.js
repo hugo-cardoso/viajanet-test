@@ -62,6 +62,7 @@ module.exports = {
     alias: {
       '@components': path.resolve(__dirname, '../src/components'),
       '@images': path.resolve(__dirname, '../src/assets/images'),
+      '@globalStyles': path.resolve(__dirname, '../src/globalStyles'),
       '@scss': path.resolve(__dirname, '../src/assets/scss'),
       '@': path.resolve(__dirname, '../src')
     }
