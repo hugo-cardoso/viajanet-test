@@ -7,6 +7,7 @@ export default styled.div`
   margin: 0 auto;
   
   @media screen and (max-width: ${ breakPoints.tablet }px) {
+    box-sizing: border-box;
     padding: 0 5px;
   }
 `;
