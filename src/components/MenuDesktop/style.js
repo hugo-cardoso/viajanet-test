@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ContanerBase from '@globalStyles/Container';
+import breakPoints from '@globalStyles/breakPoints';
 
 import arrowDown from '@images/arrow-down.png';
 
@@ -8,6 +9,10 @@ export const Wrapper = styled.div`
   height: 60px;
   background-color: #FFF;
   display: flex;
+
+  @media screen and (max-width: ${ breakPoints.tablet }px) {
+    display: none;
+  }
 `;
 
 export const Container = styled(ContanerBase)`
