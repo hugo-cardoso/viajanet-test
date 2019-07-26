@@ -1,12 +1,10 @@
 import breakPoints from "@globalStyles/breakPoints";
 
-const { innerWidth } = window;
+const isMobile = () =>  window.innerWidth <= breakPoints.mobile;
 
-const isMobile = () =>  innerWidth <= breakPoints.mobile;
+const isTablet = () =>  !isMobile() && window.innerWidth <= breakPoints.tablet;
 
-const isTablet = () =>  !isMobile() && innerWidth <= breakPoints.tablet;
-
-const isDesktop = () =>  innerWidth > breakPoints.desktop;
+const isDesktop = () =>  window.innerWidth > breakPoints.desktop;
 
 export {
   isMobile,
