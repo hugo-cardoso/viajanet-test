@@ -26,5 +26,10 @@ export default createGlobalStyle`
     font-weight: 700;
   }
   body {overflow-x: hidden;}
-  #app {width: 100%;}
+  
+  #app {
+    width: 100%;
+    overflow-x: hidden; 
+    min-height: 100vh;
+  }
 `;
