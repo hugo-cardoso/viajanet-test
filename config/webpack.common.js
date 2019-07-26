@@ -55,6 +55,14 @@ module.exports = {
             name: 'assets/images/[name].[ext]',
           }
         }]
+      },{
+        test: /\.(ttf|woff|woff2|otf)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: 'assets/fonts/[name].[ext]',
+          }
+        }]
       }
     ]
   },
@@ -64,6 +72,7 @@ module.exports = {
       '@images': path.resolve(__dirname, '../src/assets/images'),
       '@globalStyles': path.resolve(__dirname, '../src/globalStyles'),
       '@scss': path.resolve(__dirname, '../src/assets/scss'),
+      '@fonts': path.resolve(__dirname, '../src/assets/fonts'),
       '@': path.resolve(__dirname, '../src')
     }
   }

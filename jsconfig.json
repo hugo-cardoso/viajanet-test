@@ -8,6 +8,7 @@
       "@images/*": ["../src/assets/images/*"],
       "@globalStyles/*": ["../src/globalStyles/*"],
       "@scss/*": ["../src/assets/scss/*"],
+      "@fonts/*": ["../src/assets/fonts/*"],
       "@/*": ["../src/*"]
     }
   },
