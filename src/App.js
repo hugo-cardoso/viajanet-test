@@ -1,8 +1,7 @@
 import React from 'react';
 
 import Header from '@components/Header';
-import MenuDesktop from '@components/MenuDesktop';
-import MenuMobile from '@components/MenuMobile';
+import Menu from '@components/Menu';
 
 import Container from '@globalStyles/Container';
 import GlobalStyle from '@globalStyles/global';
@@ -10,8 +9,7 @@ import GlobalStyle from '@globalStyles/global';
 const App = () => (
   <>
     <GlobalStyle />
-    <MenuDesktop />
-    <MenuMobile />
+    <Menu />
     <Header />
     <Container>
       <div>:)</div>
