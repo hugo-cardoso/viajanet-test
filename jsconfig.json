@@ -7,6 +7,7 @@
       "@components/*": ["../src/components/*"],
       "@images/*": ["../src/assets/images/*"],
       "@globalStyles/*": ["../src/globalStyles/*"],
+      "@helpers/*": ["../src/helpers/*"],
       "@scss/*": ["../src/assets/scss/*"],
       "@fonts/*": ["../src/assets/fonts/*"],
       "@/*": ["../src/*"]

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
+import * as DeviceHelper from '@helpers/deviceHelper';
 import {
   Wrapper,
   Panel,
   PanelTabs,
   PanelTab
 } from './style';
-import breakPoints from '@globalStyles/breakPoints';
 
 const TAB_ITEMS = [
-  window.innerWidth <= breakPoints.mobile ? "Passagens" : "Passagens Aéreas",
+  DeviceHelper.isMobile() ? "Passagens" : "Passagens Aéreas",
   "Pacotes",
   "Hotéis",
   "Carros"

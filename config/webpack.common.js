@@ -71,6 +71,7 @@ module.exports = {
       '@components': path.resolve(__dirname, '../src/components'),
       '@images': path.resolve(__dirname, '../src/assets/images'),
       '@globalStyles': path.resolve(__dirname, '../src/globalStyles'),
+      '@helpers': path.resolve(__dirname, '../src/helpers'),
       '@scss': path.resolve(__dirname, '../src/assets/scss'),
       '@fonts': path.resolve(__dirname, '../src/assets/fonts'),
       '@': path.resolve(__dirname, '../src')
