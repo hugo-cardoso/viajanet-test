@@ -25,4 +25,6 @@ export default createGlobalStyle`
     src: url(${ FontProximaNovaBold });
     font-weight: 700;
   }
+  body {overflow-x: hidden;}
+  #app {width: 100%;}
 `;
