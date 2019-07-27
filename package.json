@@ -1,9 +1,12 @@
 {
   "name": "viajanet-test",
   "version": "1.0.0",
+  "homepage": "https://hugo-cardoso.github.io/viajanet-test",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --color --open --config ./config/webpack.dev.js",
-    "build": "NODE_ENV=production webpack --config ./config/webpack.prod.js"
+    "build": "NODE_ENV=production webpack --config ./config/webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Hugo Cardoso <hugorafaelmc@gmail.com>",
   "license": "MIT",
@@ -30,6 +33,7 @@
     "autoprefixer": "^9.6.1"
   },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-slick": "^0.24.0",
