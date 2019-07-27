@@ -3,8 +3,8 @@ import breakPoints from '@globalStyles/breakPoints';
 
 export const Wrapper = styled.footer`
   width: 100%;
-  padding: 15px 0 0;
   box-sizing: border-box;
+  background-color: #f7f7f7;
 `;
 
 export const SiteMap = styled.div`
@@ -12,7 +12,6 @@ export const SiteMap = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 15px;
-  background-color: #f7f7f7;
   padding: 30px;
 
   @media screen and (max-width: ${ breakPoints.mobile }px) {
