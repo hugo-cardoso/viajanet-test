@@ -32,6 +32,7 @@ export default createGlobalStyle`
 
     @media screen and (max-width: ${ breakPoints.tablet }px) {
       padding-top: 60px;
+      background-color: #EBEBEB;
     }
   }
   

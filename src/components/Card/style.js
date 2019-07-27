@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  background-color: #FFF;
 `;
 
 export const Link = styled.a`
