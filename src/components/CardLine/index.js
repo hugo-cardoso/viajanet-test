@@ -4,6 +4,9 @@ import Slider from "react-slick";
 import {
   Wrapper,
   Slide,
+  DotsWrapper,
+  DotsList,
+  Dot
 } from './style';
 
 import breakPoints from '@globalStyles/breakPoints';
@@ -11,10 +14,10 @@ import breakPoints from '@globalStyles/breakPoints';
 import "slick-carousel/slick/slick.css";
 
 const SLIDE_SETTINGS = {
-  dots: false,
+  dots: true,
   arrows: false,
   infinite: false,
-  speed: 500,
+  speed: 1000,
   slidesToShow: 4,
   responsive: [
     {
@@ -25,7 +28,13 @@ const SLIDE_SETTINGS = {
         centerPadding: '20px',
       }
     }
-  ]
+  ],
+  appendDots: dots => (
+    <DotsWrapper>
+      <DotsList>{dots}</DotsList>
+    </DotsWrapper>
+  ),
+  customPaging: () => <Dot />
 };
 
 const CardLine = ({cards}) => (
