@@ -11,7 +11,7 @@ export default createGlobalStyle`
   @font-face {
     font-family: FontProximaNova;
     src: url(${ FontProximaNovaRegular });
-    font-weight: normal;
+    font-weight: 500;
   }
 
   @font-face {
