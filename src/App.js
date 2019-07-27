@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+import * as viajanetService from '@services/viajanetService';
 
 import Header from '@components/Header';
 import Menu from '@components/Menu';
@@ -9,9 +11,14 @@ import GlobalStyle from '@globalStyles/global';
 
 import "slick-carousel/slick/slick.css";
 
-import promotionsMock from './promotionsMock';
-
 const App = () => {
+  const [airlinePromotions, setAirlinePromotions] = useState([]);
+
+  useEffect(() => {
+    viajanetService
+      .getAirlinePromotions()
+      .then(res => setAirlinePromotions(res));
+  });
 
   return (
     <>
@@ -19,7 +26,7 @@ const App = () => {
       <Menu />
       <Header />
       <Container>
-        <CardLine cards={ promotionsMock }/>
+        <CardLine cards={ airlinePromotions }/>
       </Container>
     </>
   )
