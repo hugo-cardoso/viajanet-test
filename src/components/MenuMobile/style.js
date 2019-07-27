@@ -84,6 +84,7 @@ export const Sidebar = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 `;
 
 export const Menu = styled.ul`
