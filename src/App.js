@@ -7,7 +7,7 @@ import Menu from '@components/Menu';
 import CardLine from '@components/CardLine';
 
 import Container from '@globalStyles/Container';
-import GlobalStyle from '@globalStyles/global';
+import GlobalStyle, { MainTitle } from '@globalStyles/global';
 
 import "slick-carousel/slick/slick.css";
 
@@ -26,6 +26,7 @@ const App = () => {
       <Menu />
       <Header />
       <Container>
+        <MainTitle>Destinos com maior economia saindo de <span>São Paulo</span></MainTitle>
         <CardLine cards={ airlinePromotions }/>
       </Container>
     </>

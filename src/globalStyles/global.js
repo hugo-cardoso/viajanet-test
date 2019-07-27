@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
 import FontProximaNovaRegular from '@fonts/ProximaNova-Regular_gdi.woff';
@@ -39,5 +39,25 @@ export default createGlobalStyle`
     width: 100%;
     overflow-x: hidden; 
     min-height: 100vh;
+  }
+`;
+
+export const MainTitle = styled.h2`
+  font-family: "FontProximaNova", sans-serif;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  line-height: 33px;
+  margin-top: 20px;
+
+  span {
+    color: #0164bf;
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: ${ breakPoints.mobile }px) {
+    padding: 0 10px;
+    box-sizing: border-box;
   }
 `;
