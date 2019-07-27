@@ -5,6 +5,8 @@ import FontProximaNovaRegular from '@fonts/ProximaNova-Regular_gdi.woff';
 import FontProximaNovaSemiBold from '@fonts/ProximaNova-Semibold.woff';
 import FontProximaNovaBold from '@fonts/ProximaNova-Bold_gdi.woff';
 
+import breakPoints from './breakPoints';
+
 export default createGlobalStyle`
   ${ reset }
 
@@ -25,7 +27,13 @@ export default createGlobalStyle`
     src: url(${ FontProximaNovaBold });
     font-weight: 700;
   }
-  body {overflow-x: hidden;}
+  body {
+    overflow-x: hidden;
+
+    @media screen and (max-width: ${ breakPoints.tablet }px) {
+      padding-top: 60px;
+    }
+  }
   
   #app {
     width: 100%;

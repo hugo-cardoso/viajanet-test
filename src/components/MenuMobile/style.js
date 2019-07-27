@@ -11,11 +11,24 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
 
   @media screen and (min-width: ${ breakPoints.tablet }px) {
     display: none;
   }
+`;
+
+export const Content = styled.div`
+  width: 100%;
+  height: 60px;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 `;
 
 export const LogoLink = styled.a`
@@ -51,14 +64,6 @@ export const SideBarWrapper = styled.div`
   background-color: #024B8E;
   z-index: 2;
   transition: left .3s ease;
-`;
-
-export const Sidebar = styled.div`
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
 
   ::before {
     content: '';
@@ -71,6 +76,14 @@ export const Sidebar = styled.div`
     bottom: 100%;
     z-index: 2;
   }
+`;
+
+export const Sidebar = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Menu = styled.ul`

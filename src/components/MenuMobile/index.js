@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import * as DeviceHelper from '@helpers/deviceHelper';
 import {
   Wrapper,
+  Content,
   LogoLink,
   Logo,
   ButtonToggleSidebar,
@@ -59,34 +60,36 @@ const MenuMobile = () => {
 
   return (
     <Wrapper>
-      <LogoLink>
-        <ButtonToggleSidebar onClick={() => setSidebarState(!sideIsOpen)}>
-          <ButtonToggleSidebarIcon src={ sideIsOpen ? closeIcon : menuIcon } />
-        </ButtonToggleSidebar>
-        <Logo src={ logoImage } />
-      </LogoLink>
-      <SideBarWrapper active={ sideIsOpen }>
-        <Sidebar>
-          <SidebarButtonAccount href="#">Acesse ou Crie sua conta</SidebarButtonAccount>
-          <Menu>
-            {
-              MENU_ITEMS.map(({label, link}) => (
-                <MenuItem key={ label }>
-                  <MenuLink href={ link }>{ label }</MenuLink>
-                </MenuItem>
-              ))
-            }
-          </Menu>
-          <SidebarButtonReservations href="#">Minhas reservas</SidebarButtonReservations>
-          <SidebarPhones>
-            <SidebarPhonesLabel>LIGUE</SidebarPhonesLabel>
-            <SidebarPhonesPhone>4007-1510</SidebarPhonesPhone>
-            <SidebarPhonesInfo>Regiões Metropolitanas</SidebarPhonesInfo>
-            <SidebarPhonesPhone>(11) 4007-1510</SidebarPhonesPhone>
-            <SidebarPhonesInfo>Demais Regiões</SidebarPhonesInfo>
-          </SidebarPhones>
-        </Sidebar>
-      </SideBarWrapper>
+      <Content>
+        <LogoLink>
+          <ButtonToggleSidebar onClick={() => setSidebarState(!sideIsOpen)}>
+            <ButtonToggleSidebarIcon src={ sideIsOpen ? closeIcon : menuIcon } />
+          </ButtonToggleSidebar>
+          <Logo src={ logoImage } />
+        </LogoLink>
+        <SideBarWrapper active={ sideIsOpen }>
+          <Sidebar>
+            <SidebarButtonAccount href="#">Acesse ou Crie sua conta</SidebarButtonAccount>
+            <Menu>
+              {
+                MENU_ITEMS.map(({label, link}) => (
+                  <MenuItem key={ label }>
+                    <MenuLink href={ link }>{ label }</MenuLink>
+                  </MenuItem>
+                ))
+              }
+            </Menu>
+            <SidebarButtonReservations href="#">Minhas reservas</SidebarButtonReservations>
+            <SidebarPhones>
+              <SidebarPhonesLabel>LIGUE</SidebarPhonesLabel>
+              <SidebarPhonesPhone>4007-1510</SidebarPhonesPhone>
+              <SidebarPhonesInfo>Regiões Metropolitanas</SidebarPhonesInfo>
+              <SidebarPhonesPhone>(11) 4007-1510</SidebarPhonesPhone>
+              <SidebarPhonesInfo>Demais Regiões</SidebarPhonesInfo>
+            </SidebarPhones>
+          </Sidebar>
+        </SideBarWrapper>
+      </Content>
     </Wrapper>
   )
 };
