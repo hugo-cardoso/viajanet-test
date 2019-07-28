@@ -10,8 +10,6 @@ import Footer from '@components/Footer/index';
 import Container from '@globalStyles/Container';
 import GlobalStyle, { MainTitle } from '@globalStyles/global';
 
-import "slick-carousel/slick/slick.css";
-
 const App = () => {
   const [airlinePromotions, setAirlinePromotions] = useState([]);
 
