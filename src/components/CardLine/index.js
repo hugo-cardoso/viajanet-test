@@ -50,9 +50,9 @@ const CardLine = ({cards}) => (
           company,
           url,
           dates
-        }) => (
-          <Slide>
-            <Card 
+        }, index) => (
+          <Slide key={ index }>
+            <Card
               type={ type }
               title={ title }
               price={ price }
