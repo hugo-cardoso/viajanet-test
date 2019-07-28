@@ -99,7 +99,7 @@ export const TextDate = styled.p`
   display: inline-block;
 `;
 
-export const TextDateDirection = styled.p`
+export const TextDateDirection = styled.span`
   color: #7d7d7d;
   font-family: "FontProximaNova", sans-serif;
   font-weight: 700;
